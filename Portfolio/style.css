@@ -1,0 +1,295 @@
+body {
+    background-image: linear-gradient(#393838, #414141, #585858, #6f6f6f);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+section,
+header {
+    max-width: 1900px;
+    margin: 0px auto;
+
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*#splash{
+    max-width: 1200px;
+    margin: 0px auto;
+}*/
+
+h1 {
+    font-family: vogue;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: milkshake;
+    font-size: 50px;
+
+}
+
+h3 {
+    color: white;
+    font-family: milkshake;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+
+}
+
+a {
+    color: white;
+    text-align: center;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+
+}
+
+audio {
+    volume: 25%;
+}
+
+
+#introduktion .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px;
+
+
+}
+
+
+
+#test_dokumentation .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 10px;
+
+
+}
+
+#tema4 .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 10px;
+
+
+}
+
+#tema2 .column {
+    width: 100%;
+}
+
+
+.image {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+.txt {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+#tema .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 40px;
+    justify-content: center;
+}
+
+#tema .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+}
+
+@media (max-width: 1133px) {}
+
+/****************************  Menu  ****************************/
+
+
+/* unvisited link */
+header nav a:link {
+    color: black;
+}
+
+/* visited link */
+header nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: white;
+}
+
+/* selected link */
+header nav a:active {
+    color: black;
+}
+
+/*@media only screen and (max-width:645px){
+
+header {
+    position: fixed;
+    width: 97%;
+
+
+}
+
+header nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+header nav a {}
+
+
+}
+
+@media only screen and (min-width:643px) {
+
+    header {
+    position: fixed;
+    width: 97%;
+}
+
+    header nav {
+        display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    }
+
+    header nav a {
+        font-size: 1rem;
+        border-right: 0.1rem solid black;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+}
+
+@media only screen and (min-width:???px){}*/
+
+
+
+/****************************  Menu slut  ****************************/
+
+
+header nav a {
+    text-decoration: none;
+    border-right: 0.1rem solid black;
+    padding: 5px;
+}
+
+header nav a:last-child {
+    border-right: none;
+}
+
+/***Menu**/
+
+.menu {
+    text-align: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+
+}
+
+.menu_button {
+    position: relative;
+    display: inline-block;
+    background: white;
+    padding: 10px 15px;
+}
+
+.menu_button:hover {
+    background: white;
+}
+
+.menu_icon {
+    fill: black;
+    width: 32px;
+    height: 32px;
+}
+
+.menu_dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    list-style: none;
+    padding: 8px 0 16px 16px;
+    margin: 0;
+}
+
+.menu_button:hover > .menu_dropdown {
+    display: block;
+}
+
+.menu_item {
+    background: white;
+    white-space: nowrap;
+}
+
+.menu_item a {
+    display: block;
+    padding: 12px 24px;
+    color: black;
+    border-right: 5px solid transparent;
+}
+
+.menu_item a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: black;
+    border-color: black;
+}
